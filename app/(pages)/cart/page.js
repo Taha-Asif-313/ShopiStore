@@ -4,6 +4,7 @@ import CartProduct from "@/app/components/cart-page-components/CartProduct";
 import TotalBill from "@/app/components/cart-page-components/TotalBill";
 import PromoCode from "@/app/components/cart-page-components/PromoCode";
 import { AuthContext } from "@/app/context/authContext";
+import { redirect } from "next/navigation";
 
 const CartPage = () => {
   const { isLogin } = useContext(AuthContext);
